@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cake Time | Pastelero</title>
+    <link rel="stylesheet" href="./Estilos/pastelero.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+    </style>
+</head>
+
+<body>
+    <div class="topbar">
+        <ul>
+            <li><img src="./assets/caketime.png" alt="logo cake time" width="250"></li>
+            <li><a href="index.html">Inicio</a></li>
+        </ul>
+    </div>
+    <div>
+        <table>
+            <caption>Pedidos</caption>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>telefono</th>
+                    <th>correo electronico</th>
+                    <th>base pastel</th>
+                    <th>toppings</th>
+                    <th>otros</th>
+                    <th>Instrucciones extra</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Jesús Fernandéz</td>
+                    <td>+52 123456789</td>
+                    <td>jesus@example.com</td>
+                    <td>Chocolate</td>
+                    <td>Galletas</td>
+                    <td>Vela magica x1</td>
+                    <td>pasar a buscar</td>
+                </tr>
+                <tr>
+                    <td>Miles Morales</td>
+                    <td>+52 123456789</td>
+                    <td>miles@example.com</td>
+                    <td>Limon</td>
+                    <td>Fondand</td>
+                    <td>Cupcakes tentacion de cholocale</td>
+                    <td>NA</td>
+                </tr>
+                <tr>
+                    <td>Mario Pereira</td>
+                    <td>+52 123456789</td>
+                    <td>mario@example.com</td>
+                    <td>Red velvet</td>
+                    <td>Fondant</td>
+                    <td>galletas friosted</td>
+                    <td>NA</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table>
+            <caption>Insumos </caption>
+            <thead>
+                <tr>
+                    <th>item</th>
+                    <th>cantidad</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Fresa</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>Chocolate</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>Vainilla</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>Napolitano</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Redvelvet</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>Butterscotch</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>Limon</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>Zanahoria</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>Choco-fresa</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>Mocha</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>Tres leches</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Fondant</td>
+                    <td>14</td>
+                </tr>
+                <tr>
+                    <td>Chocolates</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>Frutas</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td>CocoRallado</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td>Nueces</td>
+                    <td>15</td>
+                </tr>
+                <tr>
+                    <td>Almendras</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>Sprinkles</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>Mermelada</td>
+                    <td>11</td>
+                </tr>
+                <tr>
+                    <td>Galletas</td>
+                    <td>22</td>
+                </tr>
+                <tr>
+                    <td>Cerezas</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td>Extrafrosting</td>
+                    <td>15</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <form action="">
+        <fieldset class="formulario">
+            <legend>Solicitar insumos</legend>
+            <label for="">Tu nombre
+                <input type="text" id="nombre" name="nombre" placeholder="Juan Pérez" required>
+            </label>
+            <label for="">Fecha de reposicion
+                <input type="date" id="telefono" name="reposi" required>
+            </label>
+            <label for="">Correo electronico
+                <input type="email" l placeholder="cliente@example.com" required>
+            </label>
+            <label for="">Describe aqui el pedido 
+                <input type="text" placeholder="Frosting 2 kg..." required>
+            </label>
+            <input type="submit" value="Solicitar" id="order">
+        </fieldset>
+    </form>
+    <footer>
+        <div class="footer-content">
+            <h3>Cake time</h3>
+            <p>Date un momento dulce</p>
+            <ul>
+                <li>Acerca de nosotros</li>
+                <li>Contactanos</li>
+                <li>Terminos y condiciones</li>
+            </ul>
+            <p>© 2022 Cake Time®</p>
+        </div>
+    </footer>
+</body>
+
+</html>
