@@ -1,147 +1,146 @@
-body{
-    margin:0;
-    background-color: #efefef;
+body {
+  margin: 0;
+  background-color: #efefef;
 }
-hr{
-    visibility: hidden;
+hr {
+  visibility: hidden;
 }
-h2{
-    padding-top: 90px;
-    font-family: 'pacifico';
-    font-size: 50px;
-    color: #DD5A44;
+h2 {
+  padding-top: 90px;
+  font-family: "pacifico";
+  font-size: 50px;
+  color: #dd5a44;
 }
 
-header{
-    background-color: #DD5A44;
-    height: 90px;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
+header {
+  background-color: #dd5a44;
+  height: 90px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
-.topbar{
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-#logo{
-    margin-left: 90px;
+#logo {
+  margin-left: 90px;
 }
-.topbar ul{
-    margin-right: 4rem;
-    display: flex;
-    list-style-type: none;
+.topbar ul {
+  margin-right: 4rem;
+  display: flex;
+  list-style-type: none;
 }
-.topbar li{
-   margin: 0 2rem;
-   font-family: 'Bree serif';
-   font-size: 28px;
+.topbar li {
+  margin: 0 2rem;
+  font-family: "Bree serif";
+  font-size: 28px;
 }
-.topbar a{
-    text-decoration: none;
-    color: white;
+.topbar a {
+  text-decoration: none;
+  color: white;
 }
-.topbar a:hover{
-    text-decoration: underline;
+.topbar a:hover {
+  text-decoration: underline;
 }
-section{
-    padding:0 30px ;
-    text-align: center;
+section {
+  padding: 0 30px;
+  text-align: center;
 }
-.container{
-    display: inline-block;
-    font-family: 'Bree serif';
-    font-size: 20px;
-    text-align: center;
+.container {
+  display: inline-block;
+  font-family: "Bree serif";
+  font-size: 20px;
+  text-align: center;
 }
-.container h2{
-    text-align: center;
+.container h2 {
+  text-align: center;
 }
-#pasteles p{
-    font-size: 24px;
-    color: #AB4735;
+#pasteles p {
+  font-size: 24px;
+  color: #ab4735;
 }
-#bases{
-    text-align: left;
-    font-family:'Bree serif';
+#bases {
+  text-align: left;
+  font-family: "Bree serif";
 }
-#bases label{
-    display: block;
+#bases label {
+  display: block;
 }
 #toppings {
-    text-align: left;
-    white-space: pre-line;    
+  text-align: left;
+  white-space: pre-line;
 }
-#add_base{
-    margin-top: 20px;
-    text-align: left;
+#add_base {
+  margin-top: 20px;
+  text-align: left;
 }
-#cupcake_description{
-    display: flex;
+#cupcake_description {
+  display: flex;
 }
-.cupcake_select{
-    width: 300px;
-    height: 330px;
-    text-align: center;
-    margin: 0 1.5rem;
-    background-color: white;
-    border-radius: 0.5rem;
-    cursor: pointer;
+.cupcake_select {
+  width: 300px;
+  height: 330px;
+  text-align: center;
+  margin: 0 1.5rem;
+  background-color: white;
+  border-radius: 0.5rem;
+  cursor: pointer;
 }
-.cupcake_select:hover{
-    box-shadow: 0  0.1rem 0.35rem rgba(0,0,0,0.3);
+.cupcake_select:hover {
+  box-shadow: 0 0.1rem 0.35rem rgba(0, 0, 0, 0.3);
 }
-.cupcake_select p{
-    font-size: 20px;
-    font-family: 'Bree serif';
-    color: #AB4735;
+.cupcake_select p {
+  font-size: 20px;
+  font-family: "Bree serif";
+  color: #ab4735;
 }
-.cupcake_select dd{
-    margin-inline-start: 0;
-    margin: 1rem;
-    font-size: 15px;
-    font-family: 'Bree serif';
+.cupcake_select dd {
+  margin-inline-start: 0;
+  margin: 1rem;
+  font-size: 15px;
+  font-family: "Bree serif";
 }
-#pedido{
-    margin: 8rem 0 2rem;
-    display: inline-block;
-    width: 250px;
-    white-space: pre-line;
+#pedido {
+  margin: 8rem 0 2rem;
+  display: inline-block;
+  width: 250px;
+  white-space: pre-line;
+}
+#pedido legend {
+  text-align: center;
+}
+footer {
+  background-color: #5e3f3a;
+  height: 180px;
+  width: 100%;
+  font-family: "Bree serif";
+  color: #f4e1d5;
+}
+.footer-content h3 {
+  font-family: "pacifico";
+  font-size: 28px;
+  margin: 0 auto;
+}
+.footer-content {
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+}
 
+.footer-content ul {
+  justify-content: center;
+  display: flex;
+  list-style-type: none;
+  text-align: center;
 }
-#pedido legend{
-    text-align: center;
+.footer-content li {
+  margin: 0 3rem;
+  justify-content: center;
+  text-align: center;
 }
-footer{
-    background-color: #5E3F3A;
-    height: 180px;
-    width: 100%;
-    font-family: 'Bree serif';
-    color: #F4E1D5;
-}
-.footer-content h3{
-    font-family: 'pacifico';
-    font-size: 28px;
-    margin: 0 auto;
-}
-.footer-content{
-    width: 100%;
-    display: inline-block;
-    text-align:center ;
-}
-
-.footer-content ul{
-    justify-content: center;
-    display: flex;
-    list-style-type: none;
-    text-align: center;
-}
-.footer-content li{
-    margin: 0 3rem;
-    justify-content: center;
-    text-align: center;
-}
-.footer-content li:hover{
-    color: #E3988B;
+.footer-content li:hover {
+  color: #e3988b;
 }
