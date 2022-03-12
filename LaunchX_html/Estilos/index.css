@@ -1,135 +1,126 @@
-*{
-    margin: 0;  
-    padding: 0;
-    box-sizing: border-box;
-}
 body{
-    background-color: white;
-    font-family: 'boster';
- 
+    margin:0;
+    background-color: #efefef;
+}
+header{
+    background-color: #DD5A44;
+    height: 90px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 .topbar{
-    background-color: #DD5A44;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align:center ;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+#logo{
+    margin-left: 90px;
 }
 .topbar ul{
-    background-color: #DD5A44;
-    list-style: none;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 10;
+    margin-right: 4rem;
     display: flex;
-    max-width: auto;
-    margin:  auto;
-    align-items: center;
-    line-height: auto;
+    list-style-type: none;
 }
 .topbar li{
-    margin:  10px auto;
-    white-space: nowrap;
-    margin-right: 100px;
-    margin-left: 15px;
+   margin: 0 2rem;
+   font-family: 'Bree serif';
+   font-size: 28px;
 }
 .topbar a{
-    text-decoration: none;  
+    text-decoration: none;
     color: white;
-    font-family: 'Bree serif';
-    font-size: 25px;
 }
-.topbar a:hover { border-bottom:3px solid #fff;}
-
-
+.topbar a:hover{
+    text-decoration: underline;
+}
 footer{
-    background-color: #DD5A44;
-    height: auto;
-    width: 100vw;
-    font-family: 'Courier New', Courier, monospace;
-    padding-top: 20px;
+    background-color: #5E3F3A;
+    height: 180px;
+    width: 100%;
+    font-family: 'Bree serif';
     color: #F4E1D5;
-}
-.footer-content{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align:center ;
 }
 .footer-content h3{
-    font-family: 'Pacifico', regular;
-    font-size: 30px;
-    color: #F4E1D5;
+    font-family: 'pacifico';
+    font-size: 28px;
+    margin: 0 auto;
+}
+.footer-content{
+    width: 100%;
+    display: inline-block;
+    text-align:center ;
+}
 
-}
-.footer-content p{
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 15px;
-    
-}
 .footer-content ul{
-    list-style: none;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 15;
+    justify-content: center;
     display: flex;
-    max-width: auto;
-    margin:  auto;
-    align-items: center;
-    line-height: auto;
-    
+    list-style-type: none;
+    text-align: center;
 }
 .footer-content li{
-    margin:  30px auto;
-    white-space: nowrap;
-    margin-left: 70px;
+    margin: 0 3rem;
+    justify-content: center;
+    text-align: center;
+}
+.footer-content li:hover{
+    color: #E3988B;
 }
 
 
 
 
 .banner img{
+    padding-top: 90px;
     max-width:100%;
 }
 
-.pastel img{
-    max-width: 40%;
-}
-.pastel a{
-
-    font-family: 'Bree serif';
-    font-size: 25px;
-    text-align: center;
-    margin-bottom: 15px;
-    color: #DD5A44;
-    text-align: center;
-    text-decoration: none;
-}
-.pastel p{
-    font-size: 20px;
-}
-
-.products img{
-    max-width: 40%;
-}
-
-.nosotros img{
-    max-width: 40%;
-}
 
 body h1{
-    font-family: 'Bree serif';
-    font-size: 35px;
+    font-family: 'pacifico';
+    font-size: 50px;
     text-align: center;
     margin-top: 200px;
     margin-bottom: 15px;
     color: #DD5A44;
 }
-body h2{
-    font-family: 'Bree serif';
-    font-size: 25px;
+section{
+    display: inline-block;
+    width: 100%;
     text-align: center;
-    margin-bottom: 15px;
-    color: #DD5A44;
+}
+.card img{
+    width: 600px;
+    border-radius: 4px;
+}
+.card{
+    margin: 2rem 0;
+    border-radius: 2px;
+    padding: 0.5rem 0;
+    display: inline-flex;
+    justify-content: space-around;
+    text-align: center;
+    background-color: white;
+    width: 1000px;
+    box-shadow: 0  0.1rem 0.35rem rgba(0,0,0,0.3);
+}
+.card h2{
+    font-size: 30px;
+    color: #5E271D;
+    margin-bottom: 2rem;
+    font-family: 'Bree serif';
+}
+.card a{
+    color: #5E271D;
+    text-decoration: none;
+}
+.card a:hover{
+    text-decoration: underline;
+    /* color: #5E271D; */
+}
+.card p{
+    margin: 1rem 1.5rem;
+    font-family:'Bree serif';
 }
 

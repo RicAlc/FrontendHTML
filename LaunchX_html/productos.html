@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./Estilos/productos.css">
+    <link rel="stylesheet" href="Estilos/productos.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
@@ -14,164 +14,178 @@
 </head>
 
 <body>
-    <div class="topbar">
-        <ul>
-            <li><img src="./assets/caketime.png" alt="logo cake time" width="250"></li>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="productos.html">Pasteles</a></li>
-            <li><a href="productos.html#cupcakes">Cupcakes</a></li>
-            <li><a href="productos.html#galletas">Galletas</a></li>
-            <li><a href="contacto.html">Contactanos</a></li>
-            <li><a href="pastelero.html">Pastelero</a></li>
-        </ul>
-    </div>
-    <div class="pasteles">
-        <h2 id="pasteles">Crea tu pastel con tu sabores y toppings favoritos</h2>
-        <img src="./assets/menu_pastel.jpg" alt="" width="600 px">
-        <img src="./assets/menu_topping.jpg" alt="" width="600 px">
-        <br>
-        <div class="bases">
-            <label for="Base">Base de 1 sabor</label>
-            <input type="radio" name="cuantossabores" id="1sabor">
-            <select name="base pasteles" id="base">
-                <option value="Fresa">Fresa</option>
-                <option value="Chocolate">Chocolate</option>
-                <option value="Vainilla">Vainilla</option>
-                <option value="Napolitano">Napolitano</option>
-                <option value="Redvelvet">Red velvet</option>
-                <option value="Butterscotch">Butterscotch</option>
-                <option value="limon">Limón</option>
-                <option value="zanahoria">Zanahoria</option>
-                <option value="Choco-fresa">Choco-fresa</option>
-                <option value="Mocha">Mocha</option>
-                <option value="tresleches">Tres leches</option>
-            </select>
-            <br>
-            <label for="base2">Base de 2 sabores</label>
-            <input type="radio" name="cuantossabores" id="2sabores">
-            <select name="base pasteles" id="base">
-                <option value="Fresa">Fresa</option>
-                <option value="Chocolate">Chocolate</option>
-                <option value="Vainilla">Vainilla</option>
-                <option value="Napolitano">Napolitano</option>
-                <option value="Redvelvet">Red velvet</option>
-                <option value="Butterscotch">Butterscotch</option>
-                <option value="limon">Limón</option>
-                <option value="zanahoria">Zanahoria</option>
-                <option value="Choco-fresa">Choco-fresa</option>
-                <option value="Mocha">Mocha</option>
-                <option value="tresleches">Tres leches</option>
-            </select>
-            <select name="base pasteles" id="base">
-                <option value="Fresa">Fresa</option>
-                <option value="Chocolate">Chocolate</option>
-                <option value="Vainilla">Vainilla</option>
-                <option value="Napolitano">Napolitano</option>
-                <option value="Redvelvet">Red velvet</option>
-                <option value="Butterscotch">Butterscotch</option>
-                <option value="limon">Limón</option>
-                <option value="zanahoria">Zanahoria</option>
-                <option value="Choco-fresa">Choco-fresa</option>
-                <option value="Mocha">Mocha</option>
-                <option value="tresleches">Tres leches</option>
-            </select>
+    <header>
+        <nav class="topbar">
+            <a href="index.html" id="logo"><img src="assets/caketime.png" alt="cake time logo" width="250"></a>
+            <ul>
+                <li><a href="#pasteles" class="navs">Pasteles</a></li>
+                <li><a href="#cupcakes" class="navs">Cupcakes</a></li>
+                <li><a href="#galletas" class="navs">Galletas</a></li>
+                <li><a href="contacto.html" class="navs">Contactanos</a></li>
+                <li><a href="pastelero.html" class="navs">Pastelero</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <div id="pasteles" class="container">
+            <h2>Pasteles</h2>
+            <div>
+                <p>Crea tu pastel con tu sabores y toppings favoritos</p>
+                <img src="./assets/menu_pastel.jpg" alt="" width="600 px">
+                <img src="./assets/menu_topping.jpg" alt="" width="600 px">
+            </div>
+            <div id="bases">
+                <p>Elige la base de 1 o 2 sabores</p>
+                <label for="base1">
+                    <input type="radio" name="cuantossabores" id="base1">
+                    Base de 1 sabor
+                    <select name="flavours" id="sabor1_1">
+                        <option value="Fresa">Fresa</option>
+                        <option value="Chocolate">Chocolate</option>
+                        <option value="Vainilla">Vainilla</option>
+                        <option value="Napolitano">Napolitano</option>
+                        <option value="Redvelvet">Red velvet</option>
+                        <option value="Butterscotch">Butterscotch</option>
+                        <option value="limon">Limón</option>
+                        <option value="zanahoria">Zanahoria</option>
+                        <option value="Choco-fresa">Choco-fresa</option>
+                        <option value="Mocha">Mocha</option>
+                        <option value="tresleches">Tres leches</option>
+                    </select>
+                </label>
+                <label for="base2">
+                    <input type="radio" name="cuantossabores" id="base2">
+                    Base de 2 sabores
+                    <select name="flavours" id="sabor2_1">
+                        <option value="Fresa">Fresa</option>
+                        <option value="Chocolate">Chocolate</option>
+                        <option value="Vainilla">Vainilla</option>
+                        <option value="Napolitano">Napolitano</option>
+                        <option value="Redvelvet">Red velvet</option>
+                        <option value="Butterscotch">Butterscotch</option>
+                        <option value="limon">Limón</option>
+                        <option value="zanahoria">Zanahoria</option>
+                        <option value="Choco-fresa">Choco-fresa</option>
+                        <option value="Mocha">Mocha</option>
+                        <option value="tresleches">Tres leches</option>
+                    </select>
+                    <select name="base pasteles" id="sabor2_2">
+                        <option value="Fresa">Fresa</option>
+                        <option value="Chocolate">Chocolate</option>
+                        <option value="Vainilla">Vainilla</option>
+                        <option value="Napolitano">Napolitano</option>
+                        <option value="Redvelvet">Red velvet</option>
+                        <option value="Butterscotch">Butterscotch</option>
+                        <option value="limon">Limón</option>
+                        <option value="zanahoria">Zanahoria</option>
+                        <option value="Choco-fresa">Choco-fresa</option>
+                        <option value="Mocha">Mocha</option>
+                        <option value="tresleches">Tres leches</option>
+                    </select>
+                </label>
+            </div>
+            <div id="toppings">
+                <p>Toppings</p>
+                <input type="checkbox" name="topping1" id="chk_fondant">Fondandt
+                <input type="checkbox" name="topping2" id="chk_chocolate">Chocolates
+                <input type="checkbox" name="topping3" id="chk_fruta">Frutas
+                <input type="checkbox" name="topping4" id="chk_coco">Coco rallado
+                <input type="checkbox" name="topping5" id="chk_nuez">Nueces
+                <input type="checkbox" name="topping6" id="chk_almendra">Almendras
+                <input type="checkbox" name="topping7" id="chk_sprinkle">Sprinkles
+                <input type="checkbox" name="topping8" id="chk_mermelada">Mermelada
+                <input type="checkbox" name="topping9" id="chk_galleta">Galletas
+                <input type="checkbox" name="topping10" id="chk_cereza">Cerezas
+                <input type="checkbox" name="topping22" id="chk_frost">Extra frosting
+            </div>
+            <div id="add_base">
+                <label for="vela">
+                    <input type="checkbox" name="vela" id="vela">Añadir vela mágica
+                </label>
+                <input type="button" name="button_cupcake" id="button_cupcake" value="Añadir al carrito">
+            </div>
         </div>
-        <br>
-
-        <div class="toppings">
-            <label for="toppings">Toppings</label>
-            <br>
-            <input type="checkbox" name="Fondant" id="chk_fondant">Fondandt
-            <input type="checkbox" name="Fondant" id="chk_fondant">Chocolates
-            <input type="checkbox" name="Fondant" id="chk_fondant">Frutas
-            <input type="checkbox" name="Fondant" id="chk_fondant">Coco rallado
-            <input type="checkbox" name="Fondant" id="chk_fondant">Nueces
-            <input type="checkbox" name="Fondant" id="chk_fondant">Almendras
-            <input type="checkbox" name="Fondant" id="chk_fondant">Sprinkles
-            <input type="checkbox" name="Fondant" id="chk_fondant">Mermelada
-            <input type="checkbox" name="Fondant" id="chk_fondant">Galletas
-            <input type="checkbox" name="Fondant" id="chk_fondant">Cerezas
-            <input type="checkbox" name="Fondant" id="chk_fondant">Extra frosting
+        <hr>
+        <div id="cupcakes" class="container">
+            <h2>Cupcakes</h2>
+            <dl id="cupcake_description">
+                <label class="cupcake_select" for="choc_cupcake">
+                    <dt><p>Tentación de chocolate</p>
+                    <img src="./assets/cupcake.png" alt="cupcake de chocolate" width="200px">
+                    </dt>
+                    <dd>Base de chocolate con relleno de mousse de chocolate amargo, frosting de crema bátida</dd>
+                    <input type="radio" name="cupcake" id="choc_cupcake">
+                </label>
+                <label class="cupcake_select" for="rojo_cupcake">
+                    <dt><p>Rojo frutal</p> 
+                        <img src="./assets/cupcake.png" alt="cupcake redvelvet con fruta" width="200px">
+                    </dt>
+                    <dd>Base de redvelvet con relleno de mermelada, frosting de crema bátida y adornado mix de frutos rojos</dd>
+                    <input type="radio" name="cupcake" id="rojo_cupcake">
+                </label>
+                <label class="cupcake_select" for="lim_cupcake">
+                    <dt><p>Limon</p>  
+                        <img src="./assets/cupcake.png" alt="cupcake de limon" width="200px">
+                    </dt>
+                    <dd>Base de limon con relleno crema pastelera, frosting de crema bátida sabor limon y adornado con
+                        flores </dd>
+                        <input type="radio" name="cupcake" id="lim_cupcake">
+                </label>
+                <label class="cupcake_select" for="bday_cupcake">
+                    <dt><p>Cumpleaños</p> 
+                        <img src="./assets/cupcake.png" alt="cupcake de cumpleaños" width="200px" >
+                        <dd>Base de vainilla, relleno de crema pastelera, crema bátida y adornado con sprinkles de colores </dd>
+                    </dt>
+                    <input type="radio" name="cupcake" id="bday_cupcake">
+                </label>
+            </dl>
+            <div class="add_cupcake">
+                <label>Tamaño de paquete
+                    <select name="paquetes cupcakes" id="cupcake_dozen">
+                        <option value="paquete chico">Paquete chico (4)</option>
+                        <option value="media docena">Media docena</option>
+                        <option value="docena">Docena</option>
+                        <option value="paquete grande">Paquete grande (20)</option>
+                    </select>
+                </label>
+                <label for="Cantidad_cupcakes">Cantidad
+                    <input type="number" name="cupcake_quantity" id="cupcake_quantity" min="1" max="5">
+                    <input type="button" name="button_cupcake" id="button_cupcake" value="Añadir al carrito">
+                </label>
+            </div>
         </div>
-        <br>
-        <label for="vela">
-            <input type="checkbox" name="vela_check" value="">Añadir vela mágica
-        </label>
-        <input type="button" name="button_cupcake" id="button_cupcake" value="Añadir al carrito">
-    </div>
-    <div class="cupcakes">
-        <h2 id="cupcakes">Cupcakes</h2>
-        <dl>
-            <dt>Tentación de chocolate
-                <img src="./assets/cupcake.jpg" alt="" width="200px">
-            </dt>
-            <dd>Base de chocolate con relleno de mousse de chocolate amargo, frosting de crema bátida y adornado con
-                chocolate rallado
-                <input type="radio" name="cupcake" id="choc_cupcake">
-            </dd>
-            <dt>Rojo frutal
-                <img src="./assets/cupcake.jpg" alt="" width="200px">
-            </dt>
-            <dd>Base de redvelvet con relleno de mermelada, frosting de crema bátida y adornado mix de frutos rojos
-                <input type="radio" name="cupcake" id="rojo_chupcake">
-            </dd>
-            <dt>Cumpleaños
-                <img src="./assets/cupcake.jpg" alt="" width="200px">
-            </dt>
-            <dd>Base de vainilla, relleno de crema pastelera, crema bátida y adornado con sprinkles de colores
-                <input type="radio" name="cupcake" id="cump_cupcake">
-            </dd>
-            <dt>Limon
-                <img src="./assets/cupcake.jpg" alt="" width="200px">
-            </dt>
-            <dd>Base de limon con relleno crema pastelera, frosting de crema bátida sabor limon y adornado con flores
-                <input type="radio" name="cupcake" id="lim_cupcake">
-            </dd>
-        </dl>
-        <label>Tamaño de paquete
-            <select name="paquetes cupcakes" id="cupcake_dozen">
-                <option value="paquete chico">Paquete chico (4)</option>
-                <option value="media docena">Media docena</option>
-                <option value="docena">Docena</option>
-                <option value="paquete grande">Paquete grande (20)</option>
+        <hr>
+        <div id="galletas" class="container">
+            <h2>Galletas</h2>
+            <p>Elige el sabor que más te guste (Paquetes de 12 galletas)</p>
+            <select name="docena galletas" id="cookie_dozen">
+                <option value="Chco-double">Chocolate doble</option>
+                <option value="Redvelvet">Red Velvet</option>
+                <option value="Mermelada">Rellenas de mermelada</option>
+                <option value="Frosted">Forsted</option>
             </select>
-        </label>
-        <label for="Cantidad_cupcakes">Cantidad
-            <input type="number" name="cupcake_quantity" id="cupcake_quantity" min="1" max="5">
+              
             <input type="button" name="button_cupcake" id="button_cupcake" value="Añadir al carrito">
-        </label>
-    </div>
-
-    <div>
-        <h2 id="galletas">Galletas</h2>
-        <p>Elige el sabor que más te guste</p>
-        <select name="docena galletas" id="cookie_dozen">
-            <option value="Chco-double">Chocolate doble</option>
-            <option value="Redvelvet">Red Velvet</option>
-            <option value="Mermelada">Rellenas de mermelada</option>
-            <option value="Frosted">Forsted</option>
-        </select>
-        <label for="Cantidad_cookies">Cantidad</label>
-        <input type="button" name="button_cupcake" id="button_cupcake" value="Añadir al carrito">
-    </div>
-    <form action="">
-        <fieldset class="formulario">
-            <legend>Datos</legend>
-            <label for="">Nombre
-                <input type="text" id="nombre" name="nombre" placeholder="Juan Pérez" required>
-            </label>
-            <label for="">Número de teléfono
-                <input type="number" id="telefono" name="telefono" placeholder="+52 ">
-            </label>
-            <label for="">Correo electronico
-                <input type="email" l placeholder="cliente@example.com" required>
-            </label>
-            <label for="">¿Algo más?
-                <input type="text" placeholder="instrucciones adicionales" required>
-            </label>
-            <input type="submit" value="Hacer pedido" id="order">
-        </fieldset>
-    </form>
+        </div>
+        <form action="">
+            <fieldset id="pedido">
+                <legend>Datos</legend>
+                <label for="nombre">Nombre
+                    <input type="text" id="nombre" name="nombre" placeholder="Juan Pérez" required>
+                </label>
+                <label for="telefono">Número de teléfono
+                    <input type="number" id="telefono" name="telefono" placeholder="+52 ">
+                </label>
+                <label for="email">Correo electronico
+                    <input type="email" id="email" placeholder="cliente@example.com" required>
+                </label>
+                <label for="descripcion">¿Algo más?
+                    <textarea name="descrpcion" id="" cols="25" rows="10"></textarea>
+                </label>
+                <input type="submit" value="Hacer pedido" id="order">
+            </fieldset>
+        </form>
+    </section>
     <footer>
         <div class="footer-content">
             <h3>Cake time</h3>

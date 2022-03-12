@@ -1,116 +1,97 @@
-*{
-    margin: 0;  
-    padding: 0;
-    box-sizing: border-box;
-}
 body{
-    background-color: white;
-    font-family: 'Times New Roman', Times, serif;
-    text-align: center;
+    margin:0;
+    background-color: #efefef;
 }
-body h1{
-    font-family: 'Bree serif';
-    font-size: 35px;
-    text-align: center;
-    margin-bottom: 15px;
-    color: #DD5A44;
-}
-body h2{
-    font-family: 'Bree serif';
-    font-size: 25px;
-    text-align: center;
-    margin-bottom: 15px;
-    color: #DD5A44;
-}
-
-
-
-
-
-.topbar{
+header{
     background-color: #DD5A44;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align:center ;
+    height: 90px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.topbar{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+#logo{
+    margin-left: 90px;
 }
 .topbar ul{
-    
-    background-color: #DD5A44;
-    list-style: none;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 10;
+    margin-right: 4rem;
     display: flex;
-    max-width: auto;
-    margin:  auto;
-    align-items: center;
-    line-height: auto;
+    list-style-type: none;
 }
 .topbar li{
-    max-width: 100%;
-    margin:  10px auto;
-    white-space: nowrap;
-    margin-right: 100px;
-    margin-left: 15px;
+   margin: 0 2rem;
+   font-family: 'Bree serif';
+   font-size: 28px;
 }
 .topbar a{
-    text-decoration: none;  
+    text-decoration: none;
     color: white;
-    font-family: 'Bree serif';
-    font-size: 25px;
 }
-.topbar a:hover { border-bottom:3px solid #fff;}
+.topbar a:hover{
+    text-decoration: underline;
+}
+section{
+    margin-left: 90px;
+    font-family: 'Bree serif';
 
-
-
-
-
+}
+section h1{
+    font-size: 40px;
+    padding-top: 90px;
+    color: #DD5A44;
+}
+section h2{
+    color:#AB4735;
+}
+#message{
+    display: block;
+    width: 250px;
+    white-space: pre-line;
+}
+#message legend{
+    text-align: center;
+}
+#redes ul{
+    display: flex;
+    list-style-type: none;
+}
+#redes li{
+    margin-left: 2rem;
+}
 footer{
-    background-color: #DD5A44;
-    height: auto;
-    width: 100vw;
-    font-family: 'Courier New', Courier, monospace;
-    padding-top: 20px;
+    background-color: #5E3F3A;
+    height: 180px;
+    width: 100%;
+    font-family: 'Bree serif';
     color: #F4E1D5;
 }
+.footer-content h3{
+    font-family: 'pacifico';
+    font-size: 28px;
+    margin: 0 auto;
+}
 .footer-content{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    width: 100%;
+    display: inline-block;
     text-align:center ;
 }
-.footer-content h3{
-    font-family: 'Pacifico', regular;
-    font-size: 30px;
-}
-.footer-content p{
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 15px;
-}
+
 .footer-content ul{
-    list-style: none;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 15;
+    justify-content: center;
     display: flex;
-    max-width: auto;
-    margin:  auto;
-    align-items: center;
-    line-height: auto;
-    
+    list-style-type: none;
+    text-align: center;
 }
 .footer-content li{
-    margin:  30px auto;
-    white-space: nowrap;
-    margin-left: 70px;
-    
-}
-.message {
-    max-width: 200px;
-    align-items: center;
+    margin: 0 3rem;
+    justify-content: center;
     text-align: center;
-    font-size: 15px;
-    display: inline-block;
-    vertical-align:middle;
+}
+.footer-content li:hover{
+    color: #E3988B;
 }

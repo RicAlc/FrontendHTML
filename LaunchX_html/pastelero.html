@@ -14,13 +14,21 @@
 </head>
 
 <body>
-    <div class="topbar">
-        <ul>
-            <li><img src="./assets/caketime.png" alt="logo cake time" width="250"></li>
-            <li><a href="index.html">Inicio</a></li>
-        </ul>
-    </div>
+    <header>
+        <nav class="topbar">
+            <a href="index.html" id="logo"><img src="assets/caketime.png" alt="cake time logo" width="250"></a>
+            <ul>
+                <li><a href="productos.html#pasteles" class="navs">Pasteles</a></li>
+                <li><a href="productos.html#cupcakes" class="navs">Cupcakes</a></li>
+                <li><a href="productos.html" class="navs">Galletas</a></li>
+                <li><a href="#contacto" class="navs">Contactanos</a></li>
+                <li><a href="pastelero.html" class="navs">Pastelero</a></li>
+            </ul>
+        </nav>
+    </header>
+
     <div>
+        <h1>Pedidos</h1>
         <table>
             <caption>Pedidos</caption>
             <thead>
@@ -64,7 +72,7 @@
                 </tr>
             </tbody>
         </table>
-
+        <h1>Insumos</h1>
         <table>
             <caption>Insumos </caption>
             <thead>
@@ -168,17 +176,18 @@
     <form action="">
         <fieldset class="formulario">
             <legend>Solicitar insumos</legend>
-            <label for="">Tu nombre
+            <label for="nombre">Tu nombre
                 <input type="text" id="nombre" name="nombre" placeholder="Juan Pérez" required>
             </label>
-            <label for="">Fecha de reposicion
-                <input type="date" id="telefono" name="reposi" required>
+            <label for="fecha">Fecha de reposicion
+                <input type="date" id="fecha" name="fecha" required>
             </label>
-            <label for="">Correo electronico
-                <input type="email" l placeholder="cliente@example.com" required>
+            <label for="email">Correo electronico
+                <input type="email" id="email" placeholder="cliente@example.com" required>
             </label>
-            <label for="">Describe aqui el pedido 
-                <input type="text" placeholder="Frosting 2 kg..." required>
+            <br>
+            <label for="pedido">Describe aqui el pedido 
+                <textarea name="pedido" id="pedido" cols="30" rows="10"></textarea>
             </label>
             <input type="submit" value="Solicitar" id="order">
         </fieldset>
